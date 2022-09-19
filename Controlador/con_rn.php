@@ -1,11 +1,12 @@
 <?php
+ini_set('display_errors', 'On');
 //metemos los metodos publicos que vienen de mod_rn.php 
 include '../Modelo/mod_rn.php';
 include '../Persistencia/conexion.php';
 //creamos objeto de conexion para acceder a los metodos registrar
 $conexion=new conexion();
 //validamos si se presiono boton
-if (isset($_POST['btnRN'])) {
+if (isset($_POST['btnRegistrar'])) {
     $HCL=$_POST['txtHCL'];
     $FN=$_POST['txtFN'];
     $NOM=$_POST['txtNOM'];
@@ -19,4 +20,5 @@ if (isset($_POST['btnRN'])) {
     //que se encuentra en la clase conexion...
     $conexion->registra($mod_rn);
     header('location:../Vista/listado.php');
+    var_dump($conexion);
 }
