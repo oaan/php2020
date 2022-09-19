@@ -1,0 +1,11 @@
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| HCL      | double       | NO   |     | NULL    |       |
+| FN       | date         | YES  |     | NULL    |       |
+| NOM      | varchar(20)  | YES  |     | NULL    |       |
+| AM       | varchar(30)  | YES  |     | NULL    |       |
+| OS       | varchar(255) | YES  |     | NULL    |       |
+| AFILIADO | varchar(50)  | YES  |     | NULL    |       |
+| HEPB     | tinyint(1)   | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
