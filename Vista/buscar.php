@@ -8,7 +8,6 @@
             <?php
             include './encabezado.php';
             include '../Controlador/con_rn.php';
-            //agregamos metodos
             $objCN = new conexion();
             ?>
         </header>
@@ -18,9 +17,7 @@
             <br>
             <h3>Busqueda de RN por HCL</h3>
             <?php
-            //objeto de modelo
             $objRN = new mod_rn($HCL, $FN, $NOM, $AM, $OS, $AFILIADO, $HEPB);
-            //metemos la hcl
             $objRN->setHCL($_POST['txtHCL']);
             $rn = $objCN->busca($objRN);
             ?>
