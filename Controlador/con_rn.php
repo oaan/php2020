@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 'On');
+//ini_set('display_errors', 'On');
 //metemos los metodos publicos que vienen de mod_rn.php 
 include '../Modelo/mod_rn.php';
 include '../Persistencia/conexion.php';
