@@ -20,5 +20,5 @@ if (isset($_POST['btnRegistrar'])) {
     //que se encuentra en la clase conexion...
     $conexion->registra($mod_rn);
     header('location:../Vista/listado.php');
-    var_dump($conexion);
+//    var_dump($conexion);
 }
