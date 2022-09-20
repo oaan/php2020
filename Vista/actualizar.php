@@ -24,7 +24,6 @@
                 }
                 if ($boton == 'Actualiza') {
                     $HCL = $_POST['txtHCL'];
-                    ;
                     $FN = $_POST['txtFN'];
                     $NOM = $_POST['txtNOM'];
                     $AM = $_POST['txtAM'];
@@ -41,17 +40,64 @@
                 <table>
                     <tr>
                         <td>Historia</td>
+                        <td>
+                            <input type="text" name="txtHCL" value="<?php echo $rn['HCL']; ?>">
+                        </td>
+                        <td>
+                            <input type="submit" name="btnRN" value="Buscar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fecha Nacimiento</td>
+                        <td>
+                            <input type="text" name="txtFN" value="<?php echo $rn['FN']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombres <td>
+                        <td>
+                            <input type="text" name="txtNOM" value="<?php echo $rn['NOM']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido Materno</td>
+                        <td>
+                            <input type="text" name="txtAM" value="<?php echo $rn['AM']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Obra Social</td>
+                        <td>
+                            <input type="text" name="txtOS" value="<?php echo $rn['OS']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nro de Afiliado</td>
+                        <td>
+                            <input type="text" name="txtAFILIADO" value="<?php echo $rn['AFILIADO']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vacuna Hep B</td>
+                        <td>
+                            <input type="checkbox" name="chkHEPB" value="<?php echo $rn['HEPB']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="btnRN" value="Actualizar">
+
+                        </td>
                     </tr>
                 </table>
             </form>
         </section>
         <footer>
             <br>
-            <?php 
-
+            <?php
             include './pie.php';
-
-?>
+            ?>
         </footer>
     </body>
 </html>
