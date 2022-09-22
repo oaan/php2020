@@ -13,9 +13,7 @@
 
         </header>
         <section>
-            <br>
-            <br>
-            <br>
+            <br><br><br>
             <h3>Registro de Recien Nacido</h3>
             <br>
             <form action="../Controlador/con_rn.php" method="POST">
@@ -73,7 +71,7 @@
         </section>
         <footer>
             <br>
-            <?php include './pie.php';?>
+            <?php include './pie.php'; ?>
             <br>
         </footer>
     </body>

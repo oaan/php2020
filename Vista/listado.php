@@ -8,9 +8,10 @@
             <?php
             include './encabezado.php';
             ?>
-            <br>
         </header>
+        <br><br><br>
         <h3>Listado</h3>
+        <br>
         <?php
         //metodos de conexion
         include '../Persistencia/conexion.php';

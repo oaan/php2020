@@ -12,10 +12,9 @@
             ?>
         </header>
         <section>
-            <br>
-            <br>
-            <br>
+            <br><br><br>
             <h3>Busqueda de RN por HCL</h3>
+            <br>
             <?php
             $objRN = new mod_rn($HCL, $FN, $NOM, $AM, $OS, $AFILIADO, $HEPB);
             $objRN->setHCL($_POST['txtHCL']);
