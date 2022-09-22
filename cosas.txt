@@ -9,3 +9,18 @@
 | AFILIADO | varchar(50)  | YES  |     | NULL    |       |
 | HEPB     | tinyint(1)   | YES  |     | NULL    |       |
 +----------+--------------+------+-----+---------+-------+
+Pasos para actualizar
+header
+php  
+encabezado,
+conexion,
+mod_rn 
+
+hacemos obj de conexion y de mod_rn, 
+
+y le mandamos al setHCL de mod_rn el $_POST['txtHCL'];
+/header
+section
+if isset de $_POST[boton]
+si es buscar
+creo variable $rn=cli

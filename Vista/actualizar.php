@@ -11,7 +11,7 @@
             include '../Modelo/mod_rn.php';
             $objCN = new conexion();
             $objRN = new mod_rn($HCL, $FN, $NOM, $AM, $OS, $AFILIADO, $HEPB);
-            $objRN->getHCL();
+            $rn = $objRN->getHCL();
             $objCN->actualiza($objRN);
             ?>
         </header>
@@ -20,7 +20,7 @@
             if (isset($_POST['btnRN'])) {
                 $boton = $_POST['btnRN'];
                 if ($boton == 'Buscar') {
-                    $rn = $objCN->busca($objRN);
+                    $objCN->busca($rn);
                 }
                 if ($boton == 'Actualiza') {
                     $HCL = $_POST['txtHCL'];
@@ -30,20 +30,19 @@
                     $OS = $_POST['txtOS'];
                     $AFILIADO = $_POST['txtAFILIADO'];
                     $HEPB = $_POST['txtHEPB'];
-                    $rn = new mod_rn($HCL, $FN, $NOM, $AM, $OS, $AFILIADO, $HEPB);
-                    $objCN->actualiza($objRN);
+                    $objRN = new mod_rn($HCL, $FN, $NOM, $AM, $OS, $AFILIADO, $HEPB);
+                    $rn = $objCN->actualiza($objRN);
                 }
             }
             ?>
             <h3>Actualizar Recien Nacidos</h3>
+            <br>
             <form method="post">
                 <table>
                     <tr>
                         <td>Historia</td>
                         <td>
                             <input type="text" name="txtHCL" value="<?php echo $rn['HCL']; ?>">
-                        </td>
-                        <td>
                             <input type="submit" name="btnRN" value="Buscar">
                         </td>
                     </tr>
@@ -54,7 +53,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Nombres <td>
+                        <td>Nombres </td>
                         <td>
                             <input type="text" name="txtNOM" value="<?php echo $rn['NOM']; ?>">
                         </td>
@@ -86,8 +85,7 @@
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" name="btnRN" value="Actualizar">
-
+                            <input type="submit" name="btnRN" value="Actualiza">
                         </td>
                     </tr>
                 </table>

@@ -1,5 +1,4 @@
 <?php
-//ini_set('display_errors', 'On');
 //metemos los metodos publicos que vienen de mod_rn.php 
 include '../Modelo/mod_rn.php';
 include '../Persistencia/conexion.php';
@@ -20,5 +19,4 @@ if (isset($_POST['btnRegistrar'])) {
     //que se encuentra en la clase conexion...
     $conexion->registra($mod_rn);
     header('location:../Vista/listado.php');
-//    var_dump($conexion);
 }

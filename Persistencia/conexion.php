@@ -43,7 +43,6 @@ class conexion {
                 . "FN='{$objRN->getFN()}',NOM='{$objRN->getNOM()}',AM='{$objRN->getAM()}',OS='{$objRN->getOS()}',"
                 . "'{$objRN->getAFILIADO()}','{$objRN->getHEPB()}' WHERE HCL='{$objRN->getHCL()}'";
         $rs = mysqli_query($this->cn, $sql);
-        var_dump($sql);
     }
 
     public function elimina(mod_rn $objRN) {
