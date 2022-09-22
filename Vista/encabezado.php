@@ -20,7 +20,7 @@
                 </li>
                 <li><a href="#">Reportes</a>
                     <ul>
-                        <li><a href="#">Listado PDF</a></li>
+                        <li><a href="Reportes/listadoPDF.php">Listado PDF</a></li>
                         <li><a href="#">En const</a></li>
                         <li><a href="#">En const</a></li>
                         

@@ -1,26 +1,3 @@
-+----------+--------------+------+-----+---------+-------+
-| Field    | Type         | Null | Key | Default | Extra |
-+----------+--------------+------+-----+---------+-------+
-| HCL      | double       | NO   |     | NULL    |       |
-| FN       | date         | YES  |     | NULL    |       |
-| NOM      | varchar(20)  | YES  |     | NULL    |       |
-| AM       | varchar(30)  | YES  |     | NULL    |       |
-| OS       | varchar(255) | YES  |     | NULL    |       |
-| AFILIADO | varchar(50)  | YES  |     | NULL    |       |
-| HEPB     | tinyint(1)   | YES  |     | NULL    |       |
-+----------+--------------+------+-----+---------+-------+
-Pasos para actualizar
-header
-php  
-encabezado,
-conexion,
-mod_rn 
-
-hacemos obj de conexion y de mod_rn, 
-
-y le mandamos al setHCL de mod_rn el $_POST['txtHCL'];
-/header
-section
-if isset de $_POST[boton]
-si es buscar
-creo variable $rn=cli
+create procedure sp_listado()select hcl,upper(concat_ws(', ',nom,am,os,afiliado))nombres,hepb from P order by hcl desc limit 10;
+drop procedure sp_listado;
+show procedure status;

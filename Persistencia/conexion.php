@@ -4,6 +4,10 @@ class conexion {
 
     private $cn = null;
 
+    public function getConecta() {
+        $this->cn = mysqli_connect('localhost', 'oscar', 'emiliano', 'Neo2011');
+        return $this->cn;
+        }
     public function __construct() {
         $this->cn = mysqli_connect('localhost', 'oscar', 'emiliano', 'Neo2011');
     }
