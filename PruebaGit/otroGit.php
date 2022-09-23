@@ -1,7 +1,8 @@
-<?php
+<html>
+    <head>
+        <title>mi tarde de solS</title>
+    </head>
+    <body>
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    </body>
+</html>
