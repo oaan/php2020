@@ -3,6 +3,7 @@
 ini_set('display_errors', 'on');
 
 include './conecta.php';
+
 require '../../fpdf.php';
 $pdf = new FPDF('P');
 $pdf->AddPage();
@@ -16,7 +17,7 @@ $pdf->Cell(200, 10, "Listado de Recien Nacidos", 0, 1, 'C');
 $pdf->Cell(10, 45, "", 0, 1);
 
 $pdf->SetFont('Arial', 'B', 8);
-$pdf->Cell(60, 10, utf8_decode("Fecha de Impresion:  ") . date("d/m/Y"), 0, 1);
+$pdf->Cell(60, 10, utf8_decode("Fecha de Impresion:  ") . date("d/m/y"), 0, 1);
 $pdf->Cell(60, 10, "HCL           "
         . "NOMBRES                                "
         . "OBRA SOCIAL   "
