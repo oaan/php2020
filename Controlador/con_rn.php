@@ -1,5 +1,5 @@
 <?php
-
+//oscar angarita design's
 //metemos los metodos publicos que vienen de mod_rn.php 
 include '../Modelo/mod_rn.php';
 include '../Persistencia/conexion.php';
